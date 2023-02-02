@@ -8,3 +8,4 @@ for i in range(11):
     img_data = requests.get(url).content
     with open(f'files/img{i+1}' + '.jpg', 'wb') as handler:
         handler.write(img_data)
+print("done")
